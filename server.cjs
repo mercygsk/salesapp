@@ -25,8 +25,6 @@ app.use('/api/users', require('./routes/api/users.cjs'));
 
 // Protect the API routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn.cjs');
-app.use('/api/items', ensureLoggedIn, require('./routes/api/items.cjs'));
-app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders.cjs'));
 
 // Put API routes here, before the "catch all" routes
 app.get('/api/test', (req, res) => {
