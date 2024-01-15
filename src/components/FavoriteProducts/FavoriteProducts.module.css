@@ -12,7 +12,7 @@
 }
 
 .productItem {
-  border: 1px solid #ccc;
+  border: 1px solid #6cb6ff; /* Galactic Blue border */
   padding: 10px;
   margin: 10px;
   width: 100%; /* Full width by default */
@@ -41,42 +41,43 @@
 }
 
 .commentButton,
-  .editButton {
-    background-color: #3498db;
-    color: #fff;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .commentTextarea {
-    width: calc(100% - 10px);
-    margin: 10px 0;
-  }
-  
-  .buttonsContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .saveCommentButton,
-  .editButton,
-  .cancelButton,
-  .submitButton {
-    flex: 1;
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  .saveCommentButton,
-  .submitButton {
-    background-color: #4CAF50;
-    color: #fff;
-    margin-right: 5px;
-  }
-  
-  .cancelButton {
-    background-color: #e74c3c;
-    color: #fff;
-    margin-left: 5px;
-  }
+.editButton {
+  background-color: #35424a; /* Galactic Blue */
+  color: #ffffff; /* White */
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.commentTextarea {
+  width: calc(100% - 10px);
+  margin: 10px 0;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saveCommentButton,
+.editButton,
+.cancelButton,
+.submitButton {
+  flex: 1;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.saveCommentButton,
+.submitButton {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff; /* White */
+  margin-right: 5px;
+}
+
+.cancelButton,
+.deleteButton {
+  background-color: #e74c3c; /* Red */
+  color: #ffffff; /* White */
+  margin-left: 5px;
+}

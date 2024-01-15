@@ -8,7 +8,7 @@
 }
 
 .productItem {
-  border: 1px solid #ccc;
+  border: 1px solid #6cb6ff; /* Galactic Blue border */
   padding: 10px;
   transition: transform 0.3s ease-in-out;
   display: flex;
@@ -21,18 +21,18 @@
 
 .productTitle {
   font-size: 1.2em;
-  color: #333;
+  color: #333333; /* Dark Nebula Black */
   margin-bottom: 10px;
 }
 
 .productPrice {
   font-size: 1em;
-  color: #777;
+  color: #777777; /* Muted Grey */
 }
 
 .commentButton {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #35424a; /* Galactic Blue */
+  color: #ffffff; /* White */
   padding: 5px;
   margin-top: 10px;
   cursor: pointer;
@@ -56,13 +56,13 @@
 }
 
 .saveCommentButton {
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #4CAF50; /* Green */
+  color: #ffffff; /* White */
   margin-right: 5px;
 }
 
 .cancelButton {
-  background-color: #e74c3c;
-  color: #fff;
+  background-color: #e74c3c; /* Red */
+  color: #ffffff; /* White */
   margin-left: 5px;
 }

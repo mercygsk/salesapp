@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as userService from '../utilities/users-services';
 import styles from './NavBar.module.css';
+import '../index.css'; // Import the global styles
 
 function NavBar(props) {
   // Add in functionality to log out
@@ -13,31 +14,31 @@ function NavBar(props) {
   }
 
   return (
-    <nav className={styles.nav}>
-      <span className={styles.userWelcome}>Welcome, {props.user.name}</span>
+    <nav className={`${styles.nav} ${styles.globalStyles}`}>
+      <span className={`${styles.userWelcome} ${styles.globalStyles}`}>Welcome, {props.user.name}</span>
       <ul className={styles.navLinks}>
         <li>
-          <Link to="/" className={styles.navLink}>
+          <Link to="/" className={`${styles.navLink} ${styles.globalStyles}`}>
             Dashboard
           </Link>
         </li>
         <li>
-          <Link to="/myproducts" className={styles.navLink}>
+          <Link to="/myproducts" className={`${styles.navLink} ${styles.globalStyles}`}>
             My Products
           </Link>
         </li>        
         <li>
-          <Link to="/profile" className={styles.navLink}>
+          <Link to="/profile" className={`${styles.navLink} ${styles.globalStyles}`}>
             Profile
           </Link>
         </li>
         <li>
-          <Link to="/settings" className={styles.navLink}>
+          <Link to="/settings" className={`${styles.navLink} ${styles.globalStyles}`}>
             Settings
           </Link>
         </li>
         <li>
-          <Link to="" onClick={handleLogOut} className={styles.logoutLink}>
+          <Link to="" onClick={handleLogOut} className={`${styles.logoutLink} ${styles.globalStyles}`}>
             Log Out
           </Link>
         </li>

@@ -1,216 +1,139 @@
 /* index.css */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  .mainContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Navbar Styles */
-  nav {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navLinks {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navLink {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .navLink:hover {
-    text-decoration: underline;
-    color: #ffd700;
-  }
-  
-  .userWelcome {
-    font-size: 18px;
-  }
-  
-  .logoutLink {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .logoutLink:hover {
-    text-decoration: underline;
-    color: #ffd700;
-  }
-  
-  /* Product Display Styles */
-  .productDisplayContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    margin: 20px;
-  }
-  
-  .productItem {
-    border: 1px solid #ccc;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .productItem:hover {
-    transform: scale(1.05);
-  }
-  
-  .productTitle {
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  .commentButton {
-    background-color: #3498db;
-    color: #fff;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .commentTextarea {
-    width: calc(100% - 10px);
-    margin: 10px 0;
-  }
-  
-  .buttonsContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  
-  .saveCommentButton,
-  .cancelButton {
-    flex: 1;
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  .saveCommentButton {
-    background-color: #4CAF50;
-    color: #fff;
-    margin-right: 5px;
-  }
-  
-  .cancelButton {
-    background-color: #e74c3c;
-    color: #fff;
-    margin-left: 5px;
-  }
-  
-  /* Auth Page Styles */
-  .authContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .authForm {
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .authInput {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .authButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .authButton:hover {
-    background-color: #2187c5;
-  }
-  
-  .authLink {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .authLink a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-  }
-  
-  .authLink a:hover {
-    text-decoration: underline;
-    color: #ffd700;
-  }
-  
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
 
-  .commentButton,
-  .editButton {
-    background-color: #3498db;
-    color: #fff;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f2f4f8;
+}
+
+a {
+  text-decoration: none;
+  color: #6cb6ff;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(53, 66, 74, 0.9);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #6cb6ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+.nav-link {
+  color: #6cb6ff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #35424a;
+}
+
+/* Main Content Styles */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #6cb6ff;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #35424a;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: #6cb6ff;
+}
+
+.error-message {
+  color: #ff5050;
+  margin-top: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(53, 66, 74, 0.9);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add more styles as needed */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .commentTextarea {
-    width: calc(100% - 10px);
-    margin: 10px 0;
+
+  .nav-menu {
+    margin-top: 1rem;
   }
-  
-  .buttonsContainer {
-    display: flex;
-    justify-content: space-between;
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
-  
-  .saveCommentButton,
-  .editButton
-  .cancelButton {
-    flex: 1;
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  .saveCommentButton {
-    background-color: #4CAF50;
-    color: #fff;
-    margin-right: 5px;
-  }
-  
-  .cancelButton {
-    background-color: #e74c3c;
-    color: #fff;
-    margin-left: 5px;
-  }
+}

@@ -1,8 +1,8 @@
 /* NavBar.module.css */
 
 nav {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #35424a; /* Galactic Blue */
+  color: #ffffff; /* White */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -17,28 +17,29 @@ nav {
 .navLink {
   margin-right: 15px;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff; /* White */
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease-in-out;
 }
 
 .navLink:hover {
-  color: #ffd700;
+  color: #ffd700; /* Gold */
 }
 
 .userWelcome {
   font-size: 18px;
+  color: #ffffff; /* White */
 }
 
 .logoutLink {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff; /* White */
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease-in-out;
 }
 
 .logoutLink:hover {
-  color: #ffd700;
+  color: #ffd700; /* Gold */
 }
