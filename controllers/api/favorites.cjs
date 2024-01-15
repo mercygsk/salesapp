@@ -24,8 +24,8 @@ async function getFavs(req, res) {
 
 async function addFav(req, res) {
   try{
-    // console.log("reached here");
-    // console.log(req.body);
+    console.log("reached here");
+    console.log(req.body);
     const fav = await Favorites.create({
       user: req.user._id,
       product: req.body.id,

@@ -34,6 +34,8 @@ function ProductDisplay({ products }) {
       {products.map((product) => (
         <div key={product._id} className={styles.productItem}>
           <span className={styles.productTitle}>{product.name}</span>
+          <span className={styles.productDescription}>{product.description}</span>
+          <img src={`images/${product.image}`} className={styles.thumbnailImage} alt={`Thumbnail for ${product.name}`} />
           <span className={styles.productPrice}>{product.price}</span>
           <button
             onClick={() => handleProductClick(product._id)}
