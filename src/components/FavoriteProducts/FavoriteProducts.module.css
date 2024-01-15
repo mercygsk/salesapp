@@ -1,0 +1,82 @@
+/* FavoriteProducts.module.css */
+
+.favoriteProductsContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.productDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productItem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 100%; /* Full width by default */
+  text-align: center;
+}
+
+@media screen and (min-width: 100px) {
+  .productItem {
+    width: 600px; /* Adjust width for screens wider than 600px */
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.commentButton,
+  .editButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .commentTextarea {
+    width: calc(100% - 10px);
+    margin: 10px 0;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .saveCommentButton,
+  .editButton,
+  .cancelButton,
+  .submitButton {
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .saveCommentButton,
+  .submitButton {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 5px;
+  }
+  
+  .cancelButton {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-left: 5px;
+  }

@@ -17,10 +17,15 @@ function NavBar(props) {
       <span className={styles.userWelcome}>Welcome, {props.user.name}</span>
       <ul className={styles.navLinks}>
         <li>
-          <Link to="/dashboard" className={styles.navLink}>
+          <Link to="/" className={styles.navLink}>
             Dashboard
           </Link>
         </li>
+        <li>
+          <Link to="/myproducts" className={styles.navLink}>
+            My Products
+          </Link>
+        </li>        
         <li>
           <Link to="/profile" className={styles.navLink}>
             Profile

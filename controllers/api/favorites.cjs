@@ -2,32 +2,34 @@ const Favorites = require('../../models/favorites.cjs');
 
 module.exports = {
     getFavs,
-    addFav
+    addFav,
+    updFav
 };
 
-// A cart is the unpaid order for a user
+
 async function getFavs(req, res) {
   try{
-    //const cart = await Favorites.find(req.user._id);
-    const favs = await Favorites.find({});
-    console.log(favs);
+    // console.log(req.body);
+    const favs = await Favorites.find({
+      user: req.user._id
+    }).populate('product').exec();
+    // console.log(favs.length);
+    // console.log(favs[0]);
     res.status(200).json(favs);
   }catch(e){
     res.status(400).json({ msg: e.message });
   }
 }
 
-// Add an item to the cart
 async function addFav(req, res) {
   try{
-    console.log("reached here");
-    console.log(req.body);
+    // console.log("reached here");
+    // console.log(req.body);
     const fav = await Favorites.create({
       user: req.user._id,
       product: req.body.id,
       favtext: req.body.favtext
     });
-    //await cart.addItemToCart(req.params.id);
     res.status(200).json(fav);
   }catch(e){
     console.log(e.message);
@@ -35,13 +37,18 @@ async function addFav(req, res) {
   }  
 }
 
-// Updates an item's qty in the cart
-async function setItemQtyInCart(req, res) {
+async function updFav(req, res) {
   try{
-    const cart = await Order.getCart(req.user._id);
-    await cart.setItemQty(req.body.itemId, req.body.newQty);
-    res.status(200).json(cart);
+    console.log(req.body);
+    const fav = await Favorites.findOneAndUpdate(
+      { _id: req.body.id },
+      { favtext: req.body.favtext },
+      { new: true } // Return the modified document
+    )
+    console.log(fav);
+    res.status(200).json(fav);
   }catch(e){
+    console.log(e.message);
     res.status(400).json({ msg: e.message });
   }
 }

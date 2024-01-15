@@ -60,8 +60,7 @@ import AuthPage from '../Authpage/AuthPage';
 
 // import components
 import NavBar from '../../components/NavBar';
-import Favs from '../../components/Favs';
-import FavProducts from '../../components/FavProducts';
+import FavoriteProducts from '../../components/FavoriteProducts/FavoriteProducts';
 import Products from '../../components/Products';
 
 function App() {
@@ -73,9 +72,11 @@ function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
+            <Route path='/' element={<Products user={user} setUser={setUser} />}/>
+            <Route path='/myproducts' element={<FavoriteProducts user={user} setUser={setUser} />}/>
             <Route path="/*" element={<Navigate to="/index" />} />
           </Routes>
-          <Products user={user} setUser={setUser} />
+          
           {/* <Favs user={user} setUser={setUser}/> */}
         </>
       ) : (

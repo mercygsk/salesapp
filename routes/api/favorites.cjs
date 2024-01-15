@@ -7,6 +7,10 @@ router.get('/', favoritesCtrl.getFavs);
 
 // POST
 router.post('/:id', favoritesCtrl.addFav);
+
+//PUT
+
+router.put('/:id', favoritesCtrl.updFav)
 // // POST /api/favorites/cart/checkout
 // router.post('/cart/checkout', favoritesCtrl.checkout);
 // // POST /api/favorites/cart/qty

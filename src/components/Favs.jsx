@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import * as favsAPI from '../utilities/favs-api.js';
 import { useEffect } from 'react';
-import FavProducts from './FavProducts.jsx';
+import FavProducts from './FavoriteProducts.jsx';
 
 function Favs({ user, setUser }) {
   const [favs, setFavs] = useState([]);
