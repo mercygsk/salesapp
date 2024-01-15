@@ -2,16 +2,15 @@
 
 .App {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0; /* Set the background color for the entire app */
-  min-height: 100vh; /* Ensure the app takes at least the height of the viewport */
+  background-color: #f0f0f0; 
+  min-height: 100vh; 
 }
 
 .mainContainer {
-
-  margin: 0 auto; /* Center the main container horizontally */
+  width: 100%;
+  margin: 0 auto; 
   padding: 20px;
-  background-color: #ffffff; /* Set the background color for the main container */
-  border-radius: 8px; /* Add rounded corners for a cleaner look */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-  
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 import * as userService from '../utilities/users-services';
 import styles from './NavBar.module.css';
 import '../index.css'; // Import the global styles
@@ -15,7 +16,7 @@ function NavBar(props) {
 
   return (
     <nav className={`${styles.nav} ${styles.globalStyles}`}>
-      <span className={`${styles.userWelcome} ${styles.globalStyles}`}>Welcome, {props.user.name}</span>
+      <span className={`${styles.userWelcome} ${styles.globalStyles}`}><FaUser/> Welcome, {props.user.name}</span>
       <ul className={styles.navLinks}>
         <li>
           <Link to="/" className={`${styles.navLink} ${styles.globalStyles}`}>

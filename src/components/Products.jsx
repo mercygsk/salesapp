@@ -17,9 +17,7 @@ function Products({ user, setUser }) {
 
 
   return (
-    <><div>
-      <h1>Display all available products here</h1>
-    </div><ProductDisplay products={products}/></>
+    <><ProductDisplay products={products}/></>
   )
 }
 

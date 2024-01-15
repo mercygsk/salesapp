@@ -22,14 +22,18 @@ function App() {
     <div className={`${styles.App} ${styles.mainContainer}`}>
       {user ? (
         <>
-          <NavBar user={user} setUser={setUser} />
+        <div>
+         <NavBar user={user} setUser={setUser} />
+        </div>
+        <div><hi>Products</hi></div>
+         <main>
           <Routes>
             <Route path='/' element={<Products user={user} setUser={setUser} />}/>
             <Route path='/myproducts' element={<FavoriteProducts user={user} setUser={setUser} />}/>
             <Route path='/profile' element={<Profile user={user} setUser={setUser} />}/>
             <Route path="/*" element={<Navigate to="/index" />} />
           </Routes>
-          
+          </main>
           {/* <Favs user={user} setUser={setUser}/> */}
         </>
       ) : (
