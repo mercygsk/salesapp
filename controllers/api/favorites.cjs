@@ -3,7 +3,8 @@ const Favorites = require('../../models/favorites.cjs');
 module.exports = {
     getFavs,
     addFav,
-    updFav
+    updFav,
+    delFav
 };
 
 
@@ -53,28 +54,16 @@ async function updFav(req, res) {
   }
 }
 
-// Update the cart's isPaid property to true
-async function checkout(req, res) {
+async function delFav(req, res) {
   try{
-    const cart = await Order.getCart(req.user._id);
-    cart.isPaid = true;
-    await cart.save();
-    res.status(200).json(cart);
+    console.log(req.body);
+    const fav = await Favorites.findByIdAndDelete(
+      { _id: req.body.id }
+    )
+    console.log(fav);
+    res.status(200).json(fav);
   }catch(e){
-    res.status(400).json({ msg: e.message });
-  }  
-}
-
-// Return the logged in user's paid order history
-async function history(req, res) {
-  // Sort most recent orders first
-  try{
-    const orders = await Order
-      .find({ user: req.user._id, isPaid: true })
-      .sort('-updatedAt').exec();
-    res.status(200).json(orders);
-  }catch(e){
+    console.log(e.message);
     res.status(400).json({ msg: e.message });
   }
-
 }

@@ -17,3 +17,7 @@ export function addFav(id, favtext) {
 export function updateFavorite(id, favtext) {
   return sendRequest(`${BASE_URL}/${id}`, 'PUT', {id, favtext});
 }
+
+export function deleteFavorite(id) {
+  return sendRequest(`${BASE_URL}/${id}`, 'DELETE', {id});
+}

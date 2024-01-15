@@ -65,6 +65,17 @@ function FavoriteProducts() {
     }));
   };
 
+  const handleDeleteReview = async (productId) => {
+    try {
+      // Call the delete API endpoint to delete the review
+      await favAPI.deleteFavorite(productId);
+      // After deleting, refetch the favorite products
+      await fetchFavoriteProducts();
+    } catch (error) {
+      console.error('Error deleting review:', error);
+    }
+  };
+
   return (
     <div className={styles.favoriteProductsContainer}>
       <h2>Favorite Products</h2>
@@ -112,6 +123,12 @@ function FavoriteProducts() {
                     Submit
                   </button>
                 )}
+                <button
+                  className={styles.deleteButton}
+                  onClick={() => handleDeleteReview(product._id)}
+                >
+                  Delete Review
+                </button>
               </div>
             </div>
           ))}

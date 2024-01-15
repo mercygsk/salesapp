@@ -9,11 +9,9 @@ router.get('/', favoritesCtrl.getFavs);
 router.post('/:id', favoritesCtrl.addFav);
 
 //PUT
-
 router.put('/:id', favoritesCtrl.updFav)
-// // POST /api/favorites/cart/checkout
-// router.post('/cart/checkout', favoritesCtrl.checkout);
-// // POST /api/favorites/cart/qty
-// router.put('/cart/qty', favoritesCtrl.setItemQtyInCart);
+
+//DELETE
+router.delete('/:id', favoritesCtrl.delFav)
 
 module.exports = router;
