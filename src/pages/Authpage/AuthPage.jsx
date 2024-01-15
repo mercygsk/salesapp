@@ -1,21 +1,32 @@
+// import dependencies
 import { useState } from 'react';
 import styles from './AuthPage.module.css';
 
-import SignUpForm from '../../components/SignUpForm/SignUpForm'
-import LoginForm from '../../components/LoginForm/LoginForm'
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 function AuthPage(props) {
-  const [ showLogin, setShowLogin] = useState(true);
+  const [showLogin, setShowLogin] = useState(true);
 
   return (
-    <>
-     <main className={styles.AuthPage} >
-            <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>
-    { showLogin ? <LoginForm setUser={props.setUser} /> : <SignUpForm setUser={props.setUser}/>}
-    </ main>
-    
-    </>
+    <main className={styles.AuthPage}>
+        {showLogin ? (
+          <>
+            <LoginForm setUser={props.setUser} />
+            <p className={styles.toggleLink}>
+              Don't have an account? <span onClick={() => setShowLogin(false)}>Sign Up</span>
+            </p>
+          </>
+        ) : (
+          <>
+            <SignUpForm setUser={props.setUser} />
+            <p className={styles.toggleLink}>
+              Already have an account? <span onClick={() => setShowLogin(true)}>Log In</span>
+            </p>
+          </>
+        )}
+    </main>
   );
 }
 
-export default AuthPage
+export default AuthPage;

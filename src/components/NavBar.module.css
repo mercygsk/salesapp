@@ -1,0 +1,44 @@
+/* NavBar.module.css */
+
+nav {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+}
+
+.navLink {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  color: #ffd700;
+}
+
+.userWelcome {
+  font-size: 18px;
+}
+
+.logoutLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.logoutLink:hover {
+  color: #ffd700;
+}

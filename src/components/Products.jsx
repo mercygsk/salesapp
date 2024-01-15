@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import * as productAPI from '../utilities/product-api.js';
 import { useEffect } from 'react';
-import ProductDisplay from './ProductDisplay.jsx';
+import ProductDisplay from './ProductDisplay/ProductDisplay.jsx';
 
 function Products({ user, setUser }) {
   const [products, setProducts] = useState([]);
