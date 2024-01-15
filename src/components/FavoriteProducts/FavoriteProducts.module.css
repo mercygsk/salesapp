@@ -13,71 +13,77 @@
 
 .productItem {
   border: 1px solid #6cb6ff; /* Galactic Blue border */
-  padding: 10px;
+  padding: 20px; /* Increased padding for better spacing */
   margin: 10px;
-  width: 100%; /* Full width by default */
+  width: 100%;
   text-align: center;
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 600px) {
   .productItem {
-    width: 600px; /* Adjust width for screens wider than 600px */
+    width: 80%; /* Adjust width for screens wider than 600px */
   }
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Adjusted for better spacing */
   margin-bottom: 10px;
 }
 
 .label {
   font-weight: bold;
+  margin-bottom: 5px; /* Added margin for better separation */
 }
 
 .value {
   flex-grow: 1;
-  margin-left: 10px;
+  margin-left: 0; /* Removed unnecessary margin */
 }
 
 .commentButton,
-.editButton {
+.editButton,
+.deleteButton {
   background-color: #35424a; /* Galactic Blue */
   color: #ffffff; /* White */
-  padding: 5px;
+  padding: 10px; /* Increased padding for better button size */
   margin-top: 10px;
   cursor: pointer;
 }
 
 .commentTextarea {
-  width: calc(100% - 10px);
+  width: calc(100% - 20px); /* Adjusted width for better responsiveness */
   margin: 10px 0;
+  padding: 10px; /* Increased padding for better textarea size */
 }
 
 .buttonsContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Adjusted for better spacing */
+  align-items: center; /* Centered buttons */
+  margin-top: 10px;
 }
 
 .saveCommentButton,
 .editButton,
 .cancelButton,
-.submitButton {
-  flex: 1;
-  padding: 5px;
-  cursor: pointer;
+.submitButton,
+.deleteButton {
+  width: 100%; /* Full width for buttons on smaller screens */
+  margin-bottom: 5px; /* Added margin for better separation */
 }
 
 .saveCommentButton,
 .submitButton {
   background-color: #4CAF50; /* Green */
-  color: #ffffff; /* White */
-  margin-right: 5px;
 }
 
 .cancelButton,
 .deleteButton {
   background-color: #e74c3c; /* Red */
-  color: #ffffff; /* White */
-  margin-left: 5px;
+}
+
+.smallImage {
+  max-width: 150;
+  max-height: 150px;
 }

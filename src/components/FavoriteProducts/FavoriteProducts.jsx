@@ -1,4 +1,3 @@
-// import dependencies
 import React, { useState, useEffect } from 'react';
 import * as favAPI from '../../utilities/favs-api';
 import styles from './FavoriteProducts.module.css';
@@ -76,20 +75,32 @@ function FavoriteProducts() {
     }
   };
 
+
   return (
     <div className={styles.favoriteProductsContainer}>
-      <h2>Favorite Products</h2>
+      <h2 className={styles.title}>Favorite Products</h2>
       {favoriteProducts.length === 0 ? (
-        <p>No favorite products available.</p>
+        <p className={styles.noFavorites}>No favorite products available.</p>
       ) : (
         <div className={styles.productDisplayContainer}>
           {favoriteProducts.map((product) => (
             <div key={product._id} className={styles.productItem}>
-              <div className={styles.row}>
+              <div className={styles.productInfo}>
                 <span className={styles.label}>Product Name:</span>
                 <span className={styles.value}>{product.product.name}</span>
               </div>
-              <div className={styles.row}>
+              {/* New: Display product image */}
+              <img
+                src={`images/${product.product.image}`}
+                alt={`Thumbnail for ${product.product.name}`}
+                className={`${styles.productImage} ${styles.smallImage}`}
+              />
+              <div className={styles.productInfo}>
+                {/* New: Display product description */}
+                <span className={styles.label}>Description:</span>
+                <span className={styles.value}>{product.product.description}</span>
+              </div>
+              <div className={styles.productInfo}>
                 <span className={styles.label}>My Review:</span>
                 {editForms[product._id] ? (
                   // Display the form when editForms is true
@@ -108,7 +119,7 @@ function FavoriteProducts() {
                   </span>
                 )}
               </div>
-              <div className={styles.row}>
+              <div className={styles.buttonsContainer}>
                 <button
                   className={styles.editButton}
                   onClick={() => handleEditComment(product._id)}
