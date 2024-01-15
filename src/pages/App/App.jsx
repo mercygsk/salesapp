@@ -13,6 +13,7 @@ import AuthPage from '../Authpage/AuthPage';
 import NavBar from '../../components/NavBar';
 import FavoriteProducts from '../../components/FavoriteProducts/FavoriteProducts';
 import Products from '../../components/Products';
+import Profile from '../../components/Profile/Profile';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Products user={user} setUser={setUser} />}/>
             <Route path='/myproducts' element={<FavoriteProducts user={user} setUser={setUser} />}/>
+            <Route path='/profile' element={<Profile user={user} setUser={setUser} />}/>
             <Route path="/*" element={<Navigate to="/index" />} />
           </Routes>
           
