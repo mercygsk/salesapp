@@ -1,29 +1,13 @@
 /* AuthPage.module.css */
 
-.authContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-/* .authForm {
-  max-width: 400px;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  border: 5px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
 
 .authForm {
   max-width: 400px;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -35,11 +19,13 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .authInputContainer {
   display: flex;
   flex-direction: column;
+  
 }
 
 .authInput {
@@ -61,7 +47,7 @@
 }
 
 .authButton:hover {
-  background-color: #2187c5;
+  background-color: #f5270b;
 }
 
 .authLink {
@@ -71,7 +57,7 @@
 
 .authLink a {
   text-decoration: none;
-  color: #3498db;
+  color: #eb0c0c;
   font-weight: bold;
 }
 
@@ -92,7 +78,7 @@
 
 .toggleButton {
   cursor: pointer;
-  color: #3498db;
+  color: #f30606;
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 20px;
@@ -100,13 +86,13 @@
 }
 
 .toggleButton:hover {
-  color: #2187c5;
+  color: #f1550c;
 }
 
 .toggleLink {
   margin-top: 20px;
   font-size: 0.9em;
-  color: #777;
+  color: #f80606;
 }
 
 .toggleLink span {
@@ -118,5 +104,6 @@
 }
 
 .toggleLink span:hover {
-  color: #2187c5;
+  color: #681e08;
 }
+

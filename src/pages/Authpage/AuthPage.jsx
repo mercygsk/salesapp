@@ -10,6 +10,7 @@ function AuthPage(props) {
 
   return (
     <main className={styles.AuthPage}>
+      <div >
         {showLogin ? (
           <>
             <LoginForm setUser={props.setUser} />
@@ -25,6 +26,7 @@ function AuthPage(props) {
             </p>
           </>
         )}
+        </div>
     </main>
   );
 }
