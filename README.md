@@ -53,6 +53,7 @@ Node.js and Express for the backend.
 MongoDB for the database.
 
 ### Projest Structure
+``
 /mern-product-review-app
   ├── /client          # Frontend React app
   ├── /server          # Backend Node.js and Express server
