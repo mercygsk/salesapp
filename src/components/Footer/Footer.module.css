@@ -1,0 +1,11 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #dd6969;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  

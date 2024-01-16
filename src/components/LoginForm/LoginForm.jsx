@@ -31,6 +31,7 @@ return (
   <div>
     <div className={styles.authContainer} onSubmit={handleSubmit}>
       <form autoComplete="off" className={styles.authForm}>
+      <h1>Product Reviews App</h1>
         <h2 className={styles.authFormTitle}>Login</h2>
         <div className={styles.authInputContainer}>
           <label>Email</label>

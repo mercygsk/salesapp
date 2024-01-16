@@ -84,9 +84,12 @@ POST /api/reviews/:productId: Submit a review for a specific product.
 More detailed API documentation can be found in the API_DOCUMENTATION.md file.
 
 ### Acknowledgments
-Thanks to my Instructor Christiana Takara, per-scholas team, John Moguluri for inspiration and guidance.
+Thanks to my Instructor C Takara, per scholas team for inspiration and guidance.
 
 
 
+![Product Review - ER Diagram](specs/er-prod-review.jpg)
 
+![Product Review - Flow Chart](specs/flowchart-prod-review.jpg)
 
+![Product Review - Wireframes](specs/)

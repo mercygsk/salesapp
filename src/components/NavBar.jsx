@@ -17,6 +17,7 @@ function NavBar(props) {
   return (
     <nav className={`${styles.nav} ${styles.globalStyles}`}>
       <span className={`${styles.userWelcome} ${styles.globalStyles}`}><FaUser/> Welcome, {props.user.name}</span>
+      <span className={`${styles.userWelcome} ${styles.globalStyles}`}>Product Reviews</span>
       <ul className={styles.navLinks}>
         <li>
           <Link to="/" className={`${styles.navLink} ${styles.globalStyles}`}>

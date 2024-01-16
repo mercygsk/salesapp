@@ -39,6 +39,7 @@ export class SignUpForm extends Component {
         <div>
             <div className={styles.authContainer}>
                 <form className={styles.authForm} autoComplete='off' onSubmit={this.handleSubmit}>
+                <h1>Product Reviews App</h1>
                 <h2>Sign Up</h2>
                     <div className={styles.authInputContainer}>
                     <label>Name</label>

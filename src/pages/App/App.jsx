@@ -8,12 +8,13 @@ import NavBar from '../../components/NavBar';
 import FavoriteProducts from '../../components/FavoriteProducts/FavoriteProducts';
 import Products from '../../components/Products';
 import Profile from '../../components/Profile/Profile';
+import Footer from '../../components/Footer/Footer';
 
 function App() {
   const [user, setUser] = useState(getUser());
 
   return (
-    <div className={`${styles.App} ${styles.mainContainer}`}>
+    <div className={`${styles.App} ${styles.mainContainer} ${styles.colorfulBackground}`}>
       {user ? (
         <>
         <div>
@@ -28,7 +29,7 @@ function App() {
             <Route path="/*" element={<Navigate to="/index" />} />
           </Routes>
           </main>
-          {/* <Favs user={user} setUser={setUser}/> */}
+          <Footer />
         </>
       ) : (
         <AuthPage setUser={setUser} />
