@@ -7,8 +7,7 @@ module.exports = {
 
 async function getProducts(req, res) {
   try{
-    const products = await Products.find({});
-    // console.log(products);
+    const products = await Products.find({}).sort('name');
     res.status(200).json(products);
   }catch(e){
     res.status(400).json({ msg: e.message });

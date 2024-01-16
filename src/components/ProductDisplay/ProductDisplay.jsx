@@ -18,7 +18,6 @@ function ProductDisplay({ products }) {
   };
 
   const saveComment = async () => {
-    console.log(`Product ID: ${selectedProductId}, Comment: ${comment}`);
     const addFav = await favAPI.addFav(selectedProductId, comment);
     setSelectedProductId(null);
     setComment('');
