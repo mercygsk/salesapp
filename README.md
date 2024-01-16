@@ -10,21 +10,27 @@ The "Product Review App" is a MERN (MongoDB, Express.js, React, Node.js) applica
 
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
+- [Trello Board](#trello-board)
+- [Deployed App](#deployed-app)
+- [Installation](#install-dependencies)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
+- [Flow Chart](#flow-chart)
+- [ER Diagram](#er-diagram)
+- [Wireframes](#wireframes)
+- [Unsolved Problems](#unsolved-problems)
+- [Future Enhancements](#future-enhancements)
 - [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
 
 ## Getting Started
 
 These instructions will help you set up and run the MERN Product Review App on your local machine.
 
 #### Trello Board
+
 https://trello.com/b/0GB6lpVT/product-review-app
 
 #### Deployed App
@@ -64,7 +70,7 @@ React.js for the frontend.
 Node.js and Express for the backend.
 MongoDB for the database.
 
-### Projest Structure
+### Project Structure
 
 ```console
 /mern-product-review-app
