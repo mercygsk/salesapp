@@ -27,6 +27,7 @@ These instructions will help you set up and run the MERN Product Review App on y
 
 ### Install Dependencies
 
+`
 npm install
 npm create vite@lates
 npm run build
@@ -40,6 +41,7 @@ NPM :"bcrypt": "^5.1.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "serve-favicon": "^2.5.0"
+`
 
 ### Features
 Browse products and their reviews.
@@ -73,13 +75,13 @@ Database configuration settings can be found in /database/config.js.
 Server configuration settings can be found in /server/config/.
 
 ### API Endpoints
-
+`
 GET /api/products: Get all products.
 GET /api/products/:productId: Get a specific product by ID.
 GET /api/reviews/:productId: Get reviews for a specific product.
 POST /api/reviews/:productId: Submit a review for a specific product.
 
-More detailed API documentation....
+More detailed API documentation to follow....
 
 ### Flow Chart
 
