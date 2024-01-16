@@ -1,7 +1,6 @@
 // users-api.js
 import { getToken } from './users-services';
 
-// This is the base path of the Express route that we'll define
 const BASE_URL = '/api/users';
 
 export function signUp(userData) {

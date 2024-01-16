@@ -2,14 +2,8 @@ import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import styles from './App.module.css';
 import '../../index.css';
-
-// import my functionality that I've added
 import { getUser } from '../../utilities/users-services';
-
-// import pages
 import AuthPage from '../Authpage/AuthPage';
-
-// import components
 import NavBar from '../../components/NavBar';
 import FavoriteProducts from '../../components/FavoriteProducts/FavoriteProducts';
 import Products from '../../components/Products';

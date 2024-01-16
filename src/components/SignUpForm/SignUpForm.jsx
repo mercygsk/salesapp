@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import the SignUp method 
 import { signUp } from '../../utilities/users-services';
 import styles from '../../pages/Authpage/AuthPage.module.css';
 
@@ -22,7 +21,7 @@ export class SignUpForm extends Component {
     handleSubmit = async (evt) => {
         evt.preventDefault();
         try {
-            const formData = { ...this.state} // makes a copy of the state variable
+            const formData = { ...this.state}
             delete formData.error;
             delete formData.confirm;
             const user = await signUp(formData);

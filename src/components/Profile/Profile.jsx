@@ -1,7 +1,6 @@
-// Import dependencies
 import React, { useState, useEffect } from 'react';
-import * as usersAPI from '../../utilities/users-api'; // Import your utility for fetching user data
-import styles from './Profile.module.css'; // Import your styles
+import * as usersAPI from '../../utilities/users-api';
+import styles from './Profile.module.css';
 
 function Profile({ user }) {
   const [profileData, setProfileData] = useState(user);

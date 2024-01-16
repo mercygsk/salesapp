@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as favAPI from '../../utilities/favs-api';
-import styles from './ProductDisplay.module.css'; // Correct import statement
-import '../../index.css'; // Import the global styles
+import styles from './ProductDisplay.module.css'; 
+import '../../index.css'; 
 
 function ProductDisplay({ products }) {
   const [selectedProductId, setSelectedProductId] = useState(null);

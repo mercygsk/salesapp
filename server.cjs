@@ -34,7 +34,6 @@ app.get('/api/test', (req, res) => {
     res.send('You just hit a API route');
   });
 
-//app.use('/api/users', require('./routes/api/users.cjs'));
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 

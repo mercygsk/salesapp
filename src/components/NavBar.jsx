@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
 import * as userService from '../utilities/users-services';
 import styles from './NavBar.module.css';
-import '../index.css'; // Import the global styles
+import '../index.css';
 
 function NavBar(props) {
-  // Add in functionality to log out
+  
   function handleLogOut() {
-    // Delegate to users-service
+    
     userService.logOut();
-    // update state will also cause a re-render
+    
     props.setUser(null);
   }
 
