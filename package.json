@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "seed": "node ./config/seed.cjs"
   },
+  "author": "Mercy Kodali",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
@@ -33,5 +34,5 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.0.8"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3005"
 }
