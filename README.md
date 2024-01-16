@@ -1,7 +1,3 @@
-#Ecommerce for Product Sales App
-
-This Product ReviewApp is a MERN Full Stack project.
-
 # MERN Product Review App
 
 Welcome to the MERN Product Review App! This application allows users to browse, submit, and read reviews for various products.
@@ -81,15 +77,29 @@ GET /api/products/:productId: Get a specific product by ID.
 GET /api/reviews/:productId: Get reviews for a specific product.
 POST /api/reviews/:productId: Submit a review for a specific product.
 
-More detailed API documentation can be found in the API_DOCUMENTATION.md file.
+More detailed API documentation....
 
-### Acknowledgments
-Thanks to my Instructor C Takara, per scholas team for inspiration and guidance.
-
-
-
-![Product Review - ER Diagram](specs/er-prod-review.jpg)
+### Flow Chart
 
 ![Product Review - Flow Chart](specs/flowchart-prod-review.jpg)
 
-![Product Review - Wireframes](specs/)
+### ER Diagram
+
+![Product Review - ER Diagram](specs/er-prod-review.jpg)
+
+### Wireframes
+
+## Login Page
+
+![Product Review - Wireframes](specs/wireframe-001.png)
+
+## Product Display Page
+
+![Product Review - Wireframes](specs/wireframe-002.png)
+
+## User Product Review Display Page
+
+![Product Review - Wireframes](specs/wireframe-003.png)
+
+### Acknowledgments
+Thanks to my Instructor C Takara, per scholas team for inspiration and guidance.
