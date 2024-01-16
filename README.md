@@ -53,7 +53,8 @@ Node.js and Express for the backend.
 MongoDB for the database.
 
 ### Projest Structure
-``
+
+```console
 /mern-product-review-app
   ├── /client          # Frontend React app
   ├── /server          # Backend Node.js and Express server
@@ -65,7 +66,7 @@ MongoDB for the database.
   ├── /database        # Database configurations
   ├── /public          # Public assets
   └── README.md        # Project documentation
-
+```
 
 ### Configuration 
 Database configuration settings can be found in /database/config.js.
