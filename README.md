@@ -35,6 +35,7 @@ https://trello.com/b/0GB6lpVT/product-review-app
 
 #### Deployed App
 
+https://product-review-app.onrender.com
 
 ### Prerequisites
 
@@ -47,16 +48,19 @@ https://trello.com/b/0GB6lpVT/product-review-app
 npm install
 npm create vite@lates
 npm run build
-NPM :"bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.3",
-    "morgan": "^1.10.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1",
-    "serve-favicon": "^2.5.0"
+
+  "bcrypt": "^5.1.1",
+  "dotenv": "^16.3.1",
+  "express": "^4.18.2",
+  "jsonwebtoken": "^9.0.2",
+  "mongoose": "^8.0.3",
+  "morgan": "^1.10.0",
+  "nodemon": "^3.0.2",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-icons": "^5.0.1",
+  "react-router-dom": "^6.21.1",
+  "serve-favicon": "^2.5.0"
 ```
 
 ### Features
@@ -91,12 +95,11 @@ Database configuration settings can be found in /database/config.js.
 Server configuration settings can be found in /server/config/.
 
 ### API Endpoints
-config
+
 GET /api/products: Get all products.
 GET /api/products/:productId: Get a specific product by ID.
-GET /api/reviews/:productId: Get reviews for a specific product.
-POST /api/reviews/:productId: Submit a review for a specific product.
-config
+GET /api/favorites/:productId: Get reviews for a specific product.
+POST /api/favorites/:productId: Submit a review for a specific product.
 
 More detailed API documentation to follow....
 
