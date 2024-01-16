@@ -2,6 +2,10 @@
 
 Welcome to the MERN Product Review App! This application allows users to browse, submit, and read reviews for various products.
 
+## Introduction
+
+The "Product Review App" is a MERN (MongoDB, Express.js, React, Node.js) application that allows users to review and manage their favorite products, providing a seamless and interactive platform for sharing and editing product experiences.
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -19,6 +23,12 @@ Welcome to the MERN Product Review App! This application allows users to browse,
 ## Getting Started
 
 These instructions will help you set up and run the MERN Product Review App on your local machine.
+
+#### Trello Board
+https://trello.com/b/0GB6lpVT/product-review-app
+
+#### Deployed App
+
 
 ### Prerequisites
 
@@ -105,6 +115,16 @@ More detailed API documentation to follow....
 #### User Product Review Display Page
 
 ![Product Review - Wireframes](specs/wireframe-003.png)
+
+### Unsolved Problems
+  - Deleting the current text is not possible.
+  - When adding a new comment, it appends to the existing comment instead of replacing it.
+
+### Future Enhancements
+Future enhancements for the "Product Review App" include 
+  - add to favorites with ratings
+  - implementing advanced search functionality
+  - integrating social media sharing features
 
 ### Acknowledgments
 Thanks to my Instructor C Takara, per scholas team for inspiration and guidance.
